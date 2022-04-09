@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  /* background-color: #dfd2d2; */
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+h3 {
+  background-color: rgb(142, 116, 116);
+  padding: 10px;
+  color: white;
+  font-weight: 900;
+  border-radius: 3px;
+}
