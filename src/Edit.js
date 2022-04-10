@@ -85,9 +85,16 @@ const Edit = () => {
         bgcolor={"white"}
         px={{ xs: 1, sm: 1, md: 5, lg: 14 }}
         py={3}
+        my={2}
       >
         <h3>Update User</h3>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <Typography sx={{ flex: 0.4 }}>
             <label>Name</label>
           </Typography>
@@ -102,7 +109,13 @@ const Edit = () => {
             sx={{ flex: 0.6 }}
           />
         </Box>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <Typography sx={{ flex: 0.4 }}>
             <label>Age</label>
           </Typography>
@@ -116,7 +129,13 @@ const Edit = () => {
             sx={{ flex: 0.4 }}
           />
         </Box>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <Typography sx={{ flex: 0.4 }}>
             <label>Mail</label>
           </Typography>
@@ -130,7 +149,13 @@ const Edit = () => {
             sx={{ flex: 0.4 }}
           />
         </Box>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <Typography sx={{ flex: 0.4 }}>
             <label>Phone</label>
           </Typography>

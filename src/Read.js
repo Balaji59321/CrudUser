@@ -16,7 +16,6 @@ const Read = () => {
   useEffect(() => {
     let resp = async () => {
       let response = await axios.get(baseURL + "crud");
-      console.log(response["data"]);
       setLoader(false);
       return setUsers(response["data"]);
     };
@@ -29,17 +28,16 @@ const Read = () => {
     setUsers((prev) => prev.filter((ele) => ele.id !== id));
   };
 
-  // const EditHandler = (id, name, age, mail, phone) => {
-  //   showEdit(true);
-  //   console.log(id, name, age, mail, phone);
-  //   setObj([{ id, name, age, mail, phone }]);
-  // };
-
   return (
     <div className="App">
       <h2>Users List</h2>
       {loader ? (
-        <CircularProgress color="secondary" thickness={4} size={100} />
+        <CircularProgress
+          color="secondary"
+          thickness={4}
+          size={80}
+          // size={{ sx: 25, md: 35, lg: 100 }}
+        />
       ) : (
         <Grid
           container

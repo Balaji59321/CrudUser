@@ -42,9 +42,7 @@ const Create = () => {
   };
 
   const submitHandler = async () => {
-    console.log(val[0]);
     let res = await axios.post(`${baseURL}crud`, val[0]);
-    console.log(res);
   };
 
   return (
@@ -143,7 +141,7 @@ const Create = () => {
 
       {load && (
         <>
-          <p>Preview Image</p>
+          <p>Preview Image (Wait for 2-3 seconds)</p>
           <ImageListItem sx={{ width: 250, height: 250 }}>
             <img src={`${val[0]["avatar"]}`} alt="" />
           </ImageListItem>
