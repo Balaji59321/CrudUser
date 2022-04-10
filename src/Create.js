@@ -42,7 +42,8 @@ const Create = () => {
   };
 
   const submitHandler = async () => {
-    let res = await axios.post(`${baseURL}crud`, val[0]);
+    await axios.post(`${baseURL}crud`, val[0]);
+    navigate(-1);
   };
 
   return (
@@ -77,9 +78,6 @@ const Create = () => {
           style={{ flex: 0.6 }}
           onChange={changeHandler}
         />
-        {/* <FormHelperText id="my-helper-text">
-          We'll never share your email.
-        </FormHelperText> */}
       </Box>
       <Box
         sx={{
